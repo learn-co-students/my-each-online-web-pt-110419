@@ -1,13 +1,9 @@
 def my_each(array)
-  counter = 0 
-  new_array = []
-  while counter < array.length
-  new_array << array.collect{|n| n}
-  yield
+    i = 0
+  while i < array.length
+    yield(array[i])
+    i += 1
   end
+  array
 end
-
-my_each(" ") do |n|
-   "#{n[counter]}" 
-  counter += 1 
-end
+ 
