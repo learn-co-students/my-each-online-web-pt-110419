@@ -1,10 +1,10 @@
 def my_each(words) # put argument(s) here
-words.length.times
-   # words do |i|
+counter = 0 
+  while  counter < words.length
+  yield(words[counter])
+  counter += 1
      # i
-    # end
-  # while i == 4
- # yield(words)
- # end
+     end
+     words
   # code here
 end
